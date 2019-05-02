@@ -6,5 +6,5 @@ default: build
 build:
 	docker build -t ${LATEST} .
 
-shell: build-docker
+shell: build
 	docker run --rm -it ${LATEST}
